@@ -1,0 +1,51 @@
+# Roots
+# =====
+root = /Users/corey
+#root = ssh://localhost
+root = ssh://pascal
+
+#sshargs = -lcorey -p9999
+sshargs = -lcorey -p2222
+servercmd = /usr/local/bin/unison_wrapper
+
+times = true
+auto = true
+prefer = newer
+logfile = /Users/corey/.unison/unison.log
+sortbysize = true
+
+# Paths to sync
+# =============
+path = School/Datasets
+path = School/Literature/Papers
+path = School/PhD
+path = School/Toolboxes/GabLab
+path = School/Toolboxes/GabLabPython
+path = School/Toolboxes/AudioInpaintingToolbox
+path = School/SFU
+path = Documents/JobApps
+path = School/ConferenceWork/SMC2013
+path = School/ConferenceWork/DAFx2013
+
+# ignore = Path School/SFU/Miles/Soundscape_corpra
+ignore = Name {.Trash}
+ignore = Name {*.cache}
+ignore = Name {*.o}
+ignore = Name {.tmp}
+ignore = Name {.DS_Store}
+ignore = Name {*.localized}
+ignore = Name {*.log}
+ignore = Name {*.Caches}
+ignore = Name {*.tmp}
+ignore = Name {*.Cache}
+ignore = Name *~
+#ignore = Name .*
+ignore = Name {*.torrent}
+ignore = Name {.svn}
+
+backup = Name *
+maxbackups = 3
+
+
+ignore = Path {School/SFU/Miles/BF90Corpus}
+ignore = Path {School/Datasets/tzanetakis_genre/data.pkl}
